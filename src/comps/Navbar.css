@@ -1,0 +1,70 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333333ef; */
+    padding: 0.65rem;
+    margin: 0em 7em;
+}
+.mainLogo{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 1rem;
+    color: #dfdfdf;
+    align-items: center;
+    user-select: none;
+    cursor: context-menu;
+}
+.btn, .btn:focus{
+    background-color: #333333;
+    color: white;
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 0.8rem;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: #666666;
+}
+#icons{
+    font-size: 1.5em;
+    margin: 0.25em;
+}
+#menu{
+    color: white;
+    font-size: 1.5em;
+    transition: ease-in all 0.2s;
+}
+#menu:active{
+    transform: rotate(180deg);
+}
+.burgMenu{
+    display: none;
+}
+@media (max-width: 1100px){
+    .burgMenu{
+        display: block;
+    }
+    .navi{
+        display: none;
+    }    
+    .parent{
+        margin-left: -8px;
+    }
+    .parent{
+        transform: scale(0.9);
+    }
+    .parent img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .burgMenu{
+        margin-left: 15rem;
+    }
+    .mainLogo h1{
+        font-size: 1.3rem; 
+    }
+}
