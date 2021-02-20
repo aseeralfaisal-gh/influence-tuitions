@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   filter: blur(50%);
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
@@ -26,4 +26,6 @@
   height: 100%;
   background-color: #161616cc;
   filter: hue-rotate(60deg);
+  z-index: -1;
 }
+

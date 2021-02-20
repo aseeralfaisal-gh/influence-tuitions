@@ -1,9 +1,11 @@
+
 .head-title{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #dfdfdf;
     font-family: 'Poppins';
+    z-index: -2;
 }
 .logo{
     display: flex;
@@ -12,32 +14,19 @@
     cursor: context-menu;
     user-select: none;
 }
-@media(max-width: 1050px){
+@media (max-width: 1200px){
     .head-title{
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        margin-top: -5rem;
+        margin: -5rem 0;
+        transform: scale(0.85);
     }
     .logo{
-        transform: scale(1);
-        margin-top: -5rem;
+        margin: -4.5rem 0;
     }
 }
-
-@media(max-width: 800px){
+@media (max-width: 721px){
     .head-title{
-        transform: scale(1);
-    }
-    .head-title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: -3rem;
-    }
-    .logo{
         transform: scale(0.7);
-        margin-top: -7rem;
     }
 }

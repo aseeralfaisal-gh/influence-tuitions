@@ -1,3 +1,7 @@
+:root{
+    --theme: #333333;
+    --theme-dark: #1a1a1af5;
+}
 .parent{
     display: flex;
     justify-content: space-between;
@@ -42,29 +46,84 @@
     transform: rotate(180deg);
 }
 .burgMenu{
+    display: flex;
+    z-index: 9999999;
+}
+.burgContainer{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+.btnM{
+        background-color: var(--theme);
+        color: white;
+        border-radius: 0.8rem;
+        outline: none;
+        padding: 0.8rem;
+        text-decoration: none;
+        margin: 0.5em;
+        font-size: 1rem;
+}
+.menu-mobile{
+    color: white;
+}
+.menu-mobile-passive{
+    opacity: 0;
+}
+.backdrop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-color: var(--theme-dark);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+.backdrop-none{
+    display: none;
+
+}
+.btnM, .btnM:focus{
+    display: flex;
+    justify-content: start;
+    background-color: #333333;
+    color: white;
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 2rem;
+    text-decoration: none;
+    margin: 1em;
+    font-size: 1rem;
+}
+.btnM:hover{
+    background-color: #666666;
+}
+#iconsM{
+    font-size: 2em;
+    margin: 0 1rem;
+}
+.desktop-nav{
     display: none;
 }
-@media (max-width: 1100px){
-    .burgMenu{
+@media(min-width: 1050px){
+    .desktop-nav{
         display: block;
     }
-    .navi{
+    .burgMenu{
         display: none;
-    }    
-    .parent{
-        margin-left: -8px;
     }
-    .parent{
-        transform: scale(0.9);
-    }
-    .parent img{
-        width: 5rem;
-        height: 5rem;
+}
+@media (max-width: 721px){
+    .mainLogo{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0em -9em;
+        transform: scale(0.7);
     }
     .burgMenu{
-        margin-left: 15rem;
-    }
-    .mainLogo h1{
-        font-size: 1.3rem; 
+        margin: 0em -5em;
     }
 }

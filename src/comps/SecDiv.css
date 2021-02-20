@@ -1,0 +1,29 @@
+.SecDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(37, 37, 37, 0.85);
+    height: 100vh;
+    margin-top: 6.5rem;
+    color: aliceblue;
+    overflow: hidden;
+}
+.des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.te{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1200px){
+    .SecDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .bulb{
+        transform: scale(0.9);
+    }
+}
