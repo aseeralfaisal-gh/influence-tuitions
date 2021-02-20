@@ -20,6 +20,9 @@
     user-select: none;
     cursor: context-menu;
 }
+.mainLogo h1{
+    margin: 0 0.3em;
+}
 .btn, .btn:focus{
     background-color: #333333;
     color: white;
