@@ -1,39 +1,46 @@
-.SecDiv{
+.SecDiv {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    position: relative;
-    background-color: rgba(37, 37, 37, 0.85);
+    align-items: center;
+    background-color: rgba(37, 37, 37, 0.45);
     height: 100vh;
     margin-top: 6.5rem;
     color: aliceblue;
     overflow: hidden;
 }
-.des{
+
+.secGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12rem 4rem;
+}
+
+.grid {
+    display: flex;
+}
+
+.grid i {
+    font-size: 8rem;
+    margin: -2rem 0.85rem;
+    /* background: -webkit-linear-gradient(blue, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: greenyellow;
+}
+
+.grid i:nth-child() {}
+
+.grid-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
-.te{
-    display: flex;
-    justify-content: center;
-}
-.fa-lightbulb{
-    color: rgb(253, 253, 55);
-    margin: 0.1em;
-    font-size: 28rem;
-}
-@media (max-width: 1200px){
-    .SecDiv{
-        display: flex;
-        flex-direction: column;
-    }
-    .fa-lightbulb{
-        font-size: 24rem;
-    }
-    .te{
-        transform: scale(0.7);
-        justify-content: first baseline;
-        margin: 0 -4em;
+
+@media (max-width: 1000px) {
+    .secGrid {}
+    .grid {
+        transform: scale(0.8);
+        margin: -3rem 0;
     }
 }

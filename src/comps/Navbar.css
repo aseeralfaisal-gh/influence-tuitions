@@ -1,16 +1,17 @@
-:root{
+:root {
     --theme: #333333;
     --theme-dark: #1a1a1af5;
 }
-.parent{
+
+.parent {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #333333ef; */
     padding: 0.65rem;
     margin: 0em 7em;
 }
-.mainLogo{
+
+.mainLogo {
     display: flex;
     text-decoration: none;
     font-family: 'Lato';
@@ -20,10 +21,13 @@
     user-select: none;
     cursor: context-menu;
 }
-.mainLogo h1{
+
+.mainLogo h1 {
     margin: 0 0.3em;
 }
-.btn, .btn:focus{
+
+.btn,
+.btn:focus {
     background-color: #333333;
     color: white;
     border-radius: 0.8rem;
@@ -33,47 +37,58 @@
     margin: 0.5em;
     font-size: 1rem;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #666666;
 }
-#icons{
+
+#icons {
     font-size: 1.5em;
     margin: 0.25em;
 }
-#menu{
+
+#menu {
     color: white;
     font-size: 1.5em;
     transition: ease-in all 0.2s;
 }
-#menu:active{
+
+#menu:active {
     transform: rotate(180deg);
 }
-.burgMenu{
+
+.burgMenu {
     display: flex;
     z-index: 9999999;
 }
-.burgContainer{
+
+.burgContainer {
     display: flex;
     position: fixed;
     flex-direction: column;
 }
-.btnM{
-        background-color: var(--theme);
-        color: white;
-        border-radius: 0.8rem;
-        outline: none;
-        padding: 0.8rem;
-        text-decoration: none;
-        margin: 0.5em;
-        font-size: 1rem;
+
+.btnM {
+    background-color: var(--theme);
+    color: white;
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 0.8rem;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 1rem;
+    --animate-duration: 0.3s;
 }
-.menu-mobile{
+
+.menu-mobile {
     color: white;
 }
-.menu-mobile-passive{
+
+.menu-mobile-passive {
     opacity: 0;
 }
-.backdrop{
+
+.backdrop {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,15 +96,18 @@
     background-color: var(--theme-dark);
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: -1;
+    transition: ease 0.2s all;
 }
-.backdrop-none{
-    display: none;
 
+.backdrop-none {
+    display: none;
 }
-.btnM, .btnM:focus{
+
+.btnM,
+.btnM:focus {
     display: flex;
     justify-content: flex-start;
     background-color: #333333;
@@ -101,32 +119,37 @@
     margin: 1em;
     font-size: 1rem;
 }
-.btnM:hover{
+
+.btnM:hover {
     background-color: #666666;
 }
-#iconsM{
+
+#iconsM {
     font-size: 2em;
     margin: 0 1rem;
 }
-.desktop-nav{
+
+.desktop-nav {
     display: none;
 }
-@media(min-width: 1050px){
-    .desktop-nav{
+
+@media(min-width: 1050px) {
+    .desktop-nav {
         display: block;
     }
-    .burgMenu{
+    .burgMenu {
         display: none;
     }
 }
-@media (max-width: 721px){
-    .mainLogo{
+
+@media (max-width: 721px) {
+    .mainLogo {
         display: flex;
         justify-content: space-evenly;
         margin: 0em -9em;
         transform: scale(0.7);
     }
-    .burgMenu{
+    .burgMenu {
         margin: 0em -5em;
     }
 }

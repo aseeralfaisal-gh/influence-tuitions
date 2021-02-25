@@ -3,9 +3,6 @@ import Navbar from './comps/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import Startpage from './comps/Startpage';
 import SecDiv from './comps/SecDiv';
-import { Link } from 'react-router-dom'
-import mainLogo from './logos/iTU-DP-WEB.png'
-import React, { useState } from 'react';
 
 
 function App() {
